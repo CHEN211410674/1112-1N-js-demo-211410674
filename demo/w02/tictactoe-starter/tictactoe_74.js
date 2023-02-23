@@ -61,7 +61,7 @@ allLi.forEach( (item) => {
         {
             alert('Already filled');
         } 
-        else 
+        else if (!done)
         {
             if(turn % 2 === 0){
                 item.textContent = 'o';
@@ -80,12 +80,13 @@ allLi.forEach( (item) => {
                     done = true;
                 }
             }
+            if (turn <8)
+                turn++;
+            else
+                alert('tie');
         }
-        if(!done && turn < 8) {
-            turn++;
-        } else if(turn >=8) {
-            alert('tie');
-        }
+        
+
     } );
 });
 
