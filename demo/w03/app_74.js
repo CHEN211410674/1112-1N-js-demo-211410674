@@ -28,6 +28,7 @@ const reviews = [
     img: 'https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg',
     text: 'Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ',
   },
+
 ];
 
 const img = document.querySelector('#person-img');
@@ -42,11 +43,37 @@ const randomBtn = document.querySelector('.random-btn');
 
 let currentItem = 0;
 
-window.addEventListener('DOMContentLoaded', () => {
-  const item = reviews[currentItem];
+// function showReview() {
+
+// }
+
+const showReview = (person) => {
+  const item = reviews[person];
   console.log('item', item);
   img.src = item.img;
   author.textContent = item.name;
   job.textContent = item.job;
   info.textContent = item.text;
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  showReview(currentItem);
+});
+
+nextBtn.addEventListener('click', () => {
+  currentItem++;
+  if(currentItem >= reviews.length) {
+    currentItem = 0;
+  }
+  // console.log('currentItem', review[currentItem]);
+  showReview(currentItem);
+});
+
+prevBtn.addEventListener('click', () => {
+  currentItem++;
+  if(currentItem >= reviews.length) {
+    currentItem = 0;
+  }
+  // console.log('currentItem', review[currentItem]);
+  showReview(currentItem);
 });
