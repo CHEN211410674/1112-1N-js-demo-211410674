@@ -71,12 +71,10 @@ nextBtn.addEventListener('click', () => {
 
 prevBtn.addEventListener('click', () => {
   currentItem--;
-  if(currentItem >= reviews.length) {
-    currentItem <0;
+  if(currentItem <0) {
+    currentItem =reviews.length-1;
   }
-  else{
   showReview(currentItem);
-  }
 });
 
 randomBtn.addEventListener('click', () => {
