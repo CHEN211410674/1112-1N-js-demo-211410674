@@ -70,10 +70,16 @@ nextBtn.addEventListener('click', () => {
 });
 
 prevBtn.addEventListener('click', () => {
-  currentItem++;
+  currentItem--;
   if(currentItem >= reviews.length) {
-    currentItem = 0;
+    currentItem <0;
   }
-  // console.log('currentItem', review[currentItem]);
+  else{
+  showReview(currentItem);
+  }
+});
+
+randomBtn.addEventListener('click', () => {
+  currentItem = Math.floor(Math.random() * reviews.length);
   showReview(currentItem);
 });
