@@ -55,9 +55,32 @@ const menu = [
     },
     
 ];
+const menuBtn = [
+  {
+    data_id: 'all',
+    title: 'all'
+  },
+  {
+    data_id:'breakfast',
+    title:'breakfast',
+  },
+  {
+    data_id:'lunch',
+    title:'lunch',
+  },
+  {
+    data_id:'dinner',
+    title:'dinner',
+  },
+  {
+    data_id:'shakes',
+    title:'shakes',
+  }
+];
 
+const categories = ['all', 'breakfast', 'lunch', 'dinner', 'shakes'];
 const sectionCenter = document.querySelector('.section-center');
-const btnContainer = document.querySelector('btn-container');
+const btnContainer = document.querySelector('.btn-container');
 
 const displayMenuItems = (menu) => {
     let displayMenu = menu.map((item) =>{
@@ -82,7 +105,19 @@ const displayMenuItems = (menu) => {
     sectionCenter.innerHTML = displayMenu;
 }
 
+const displayBtn = (menuBtn) => {
+    let Btn= menuBtn.map((item) =>{
+      return`
+      <button type="button" class="filter-btn" data-id=${item.data_id}>${item.title}</button>
+        </button>
+      `
+    })
+    Btn = Btn.join('');
+    btnContainer.innerHTML = Btn;
+    console.log(Btn)
+  }
 window.addEventListener('DOMContentLoaded', () => {
     displayMenuItems(menu);
-});
+    displayBtn(menuBtn);
+})
 
