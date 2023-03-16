@@ -38,7 +38,7 @@ export const menu = [
     {
     id: 5,
     title: 'dinner double',
-    category: 'dinner',
+    category: 'Dessert',
     price: 13.99,
     img: './images/item-2.jpeg',
     remote_img: '',
@@ -47,11 +47,10 @@ export const menu = [
     {
     id: 6,
     title: 'godzilla milkshake',
-    category: 'shake',
+    category: 'shakes',
     price: 13.99,
     img: './images/item-3.jpeg',
     remote_img: '',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A, odit.'
     },
-    
 ];

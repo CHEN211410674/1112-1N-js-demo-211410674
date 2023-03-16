@@ -1,66 +1,12 @@
 import {menu} from './data.js'
 
-const menu = [
-    {
-    id: 1,
-    title: 'yogurt',
-    category: 'breakfast',
-    price: 9.9,
-    img: './images/yogurt.jpg',
-    remote_img: '',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A, odit.'
-    },
-    {
-    id: 2,
-    title: 'pasta',
-    category: 'lunch',
-    price: 13.99,
-    img: './images/lunch.jpg',
-    remote_img: '',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A, odit.'
-    },
-    {
-    id: 3,
-    title: 'vegetable',
-    category: 'dinner',
-    price: 15.99,
-    img: './images/dinner.jpg',
-    remote_img: '',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A, odit.'
-    },
-    {
-    id: 4,
-    title: 'buttermilk pancakes',
-    category: 'breakfast',
-    price: 15.59,
-    img: './images/item-1.jpeg',
-    remote_img: '',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A, odit.'
-    },
-    {
-    id: 5,
-    title: 'dinner double',
-    category: 'dinner',
-    price: 13.99,
-    img: './images/item-2.jpeg',
-    remote_img: '',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A, odit.'
-    },
-    {
-    id: 6,
-    title: 'godzilla milkshake',
-    category: 'shake',
-    price: 13.99,
-    img: './images/item-3.jpeg',
-    remote_img: '',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. A, odit.'
-    },
-    
-];
+
 // const categories = ['all', 'breakfast', 'lunch', 'dinner', 'shakes'];
 const categories = ['all',...new Set(menu.map(item=>item.category))]
 const sectionCenter = document.querySelector('.section-center');
 const btnContainer = document.querySelector('.btn-container');
+
+
 
 const displayMenuItems = (menu) => {
     let displayMenu = menu.map((item) =>{
@@ -79,9 +25,9 @@ const displayMenuItems = (menu) => {
     </article>
       `
     });
-    console.log('displayMenu', displayMenu);
+    //console.log('displayMenu', displayMenu);
     displayMenu = displayMenu.join('');
-    console.log('displayMenu after join', displayMenu);
+    //console.log('displayMenu after join', displayMenu);
     sectionCenter.innerHTML = displayMenu;
 }
 
@@ -95,8 +41,29 @@ const displayBtn = (categories) => {
     Btn = Btn.join('');
     btnContainer.innerHTML = Btn;
     console.log(Btn)
+
+  const filtersBtns = btnContainer.querySelectorAll('.filter-btn');
+  console.log('filterBtns', filtersBtns);
+  filtersBtns.forEach( (btn) => {
+    btn.addEventListener('click', (e) => {
+        console.log('data-id', e.currentTarget.dataset.id);
+        const category = e.currentTarget.dataset.id;
+        const filterMenu = menu.filter( (item) => item.category === category);
+        console.log('filterMenu', filterMenu);
+        if(category === 'all'){
+          console.log('all', menu)
+          displayMenuItems(menu);
+        }else{
+          console.log(category, filterMenu);
+          displayMenuItems(filterMenu);
+        }
+      });
+  });
   }
-window.addEventListener('DOMContentLoaded', () => {
+
+  
+
+  window.addEventListener('DOMContentLoaded', () => {
     displayMenuItems(menu);
     displayBtn(categories);
 })

@@ -1,3 +1,5 @@
 git config --global user.email "211410674@o365.tku.edu.tw"
 
 git config --global user.name "CHEN211410674"
+
+$ git log --pretty=format:"%h%x09%an%x09%ad%x09%s" --after="2023-3-01"
