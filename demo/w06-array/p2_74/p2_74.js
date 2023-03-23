@@ -24,6 +24,14 @@ console.log('students2 sorted', students2);
 console.log(`The lowest score : ${students2[0].score}`);
 console.log(`The hightest score :${students[students2.length-1].score}`);
 
+console.log('students', students);
+const averageStudents = students.reduce((total, student, index) => {
+   console.log('index total', index, total);
+   return total + student.score;
+}, 0)/students.length;
+console.log('Students average', averageStudents);
+
+
 
 
 
