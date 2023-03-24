@@ -24,6 +24,6 @@ export const students = [
         name :'jane',
         score: 20
     },
-];
+]; //export:輸出
 
 export const sdata = [90, 100, 60, 40, 20, 80];
