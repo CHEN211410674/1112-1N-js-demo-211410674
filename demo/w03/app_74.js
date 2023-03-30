@@ -58,16 +58,20 @@ const showReview = (person) => {
 
 window.addEventListener('DOMContentLoaded', () => {
   showReview(currentItem);
-});
+}); //在DOM結構被完整的讀取跟解析後就會被觸發，不須等待外部資源讀取完成
+
+//nextbtn
 
 nextBtn.addEventListener('click', () => {
-  currentItem++;
+  currentItem++; //0123...
   if(currentItem >= reviews.length) {
-    currentItem = 0;
+    currentItem = 0; //跳回第一個
   }
   // console.log('currentItem', review[currentItem]);
   showReview(currentItem);
 });
+
+//prevbtn
 
 prevBtn.addEventListener('click', () => {
   currentItem--;
@@ -78,6 +82,6 @@ prevBtn.addEventListener('click', () => {
 });
 
 randomBtn.addEventListener('click', () => {
-  currentItem = Math.floor(Math.random() * reviews.length);
+  currentItem = Math.floor(Math.random() * reviews.length);//floor返回不大於参数（<=）的最大整数 ，比如1.4，floor的结果是1
   showReview(currentItem);
 });

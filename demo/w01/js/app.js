@@ -21,11 +21,11 @@ let currentResult = defaultResult;
 
 
 function getUserInput() {
-    return parseInt(userInput.value);
+    return parseInt(userInput.value); //字串轉換成數字
 }
 
 function outputResult(result, text) {
-    currentResultOutput.textContent = result;
+    currentResultOutput.textContent = result; 
     currentCalculationOutput.textContent = text;
 }
 

@@ -38,9 +38,9 @@ else
 
 const reset = () => {
   allLi.forEach((item) => {
-    item.textContent = '+';
-    item.classList = '';
-    container.style.backgroundColor = '#666';
+    item.textContent = '+'; 
+    item.classList = ''; //顏色拿掉
+    container.style.backgroundColor = '#666'; //style改變css
     turn = 0;
     done = false;
   });
@@ -59,7 +59,7 @@ allLi.forEach( (item) => {
     item.addEventListener('click', () =>{
         if(item.classList.contains('disabled'))
         {
-            alert('Already filled');
+            alert('Already filled');//函式用來彈出對話視窗
         } 
         else if (!done)
         {

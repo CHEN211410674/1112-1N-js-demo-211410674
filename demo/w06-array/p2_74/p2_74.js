@@ -2,7 +2,7 @@ import { students, sdata} from './data_74.js';//透過import宣告外部檔案(e
 
 console.log('sdata original', sdata);
 
-sdata.sort(function(a,b){return b-a}); //sort排序
+sdata.sort(function(a,b){return b-a}); //sort排序小到大
 console.log('sdata sorted', sdata);
 console.log(`The hightest score : ${sdata[0]}`);
 console.log(`The lowest score : ${sdata[sdata.length-1]}`);
