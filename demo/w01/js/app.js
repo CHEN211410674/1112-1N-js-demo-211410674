@@ -1,8 +1,8 @@
 const userInput = document.querySelector('#input-number'); //透過 const 可以宣告常數
 const addBtn = document.querySelector('#btn-add'); //querySelector:根據傳入的值來對應到指定的元素
 const subtract = document.querySelector('#btn-subtract'); //querySelector:屬於CSS選擇器，屬於靜態結果
-const multiply = document.querySelector('#btn-multiply'); //Selector選擇器
-const divide = document.querySelector('#btn-divide'); //html裡的id要加#
+const multiply = document.querySelector('#btn-multiply'); //Selector:選擇器
+const divide = document.querySelector('#btn-divide'); //html裡的id要加 # 來表示
 
 const currentResultOutput = document.querySelector('#current-result');
 const currentCalculationOutput = document.querySelector('#current-calculation');
