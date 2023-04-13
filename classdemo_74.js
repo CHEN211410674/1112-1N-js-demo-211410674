@@ -5,7 +5,7 @@ const showClassDemo = (week) => {
           showDemo.innerHTML = `<iframe src='./demo/w01/index.html' width="100%" height="100vh"/>`;
           break;
         case 'w2';
-
+        
          break;
    }
 }
