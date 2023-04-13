@@ -61,7 +61,7 @@ const displayTours_74 = () => {
           </article>
            `
           }).join('');
-          section.innerHTML
+          section.innerHTML = toursInfo;
         };
 
 const fetchTours_74 = async () => {};
