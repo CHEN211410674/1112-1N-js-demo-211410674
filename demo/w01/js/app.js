@@ -27,12 +27,12 @@ function getUserInput() {
 
 //顯示operand1 + operand2 and Result
 
-function outputResult(result, text) { //小括號裡面指定這個函數的參數
+function outputResult(result, text) { //小括號裡面指定這個函式的參數
     currentResultOutput.textContent = result; 
     currentCalculationOutput.textContent = text;
 } //一個 function 也可以沒有返回值，省略 return ，預設會返回 undefined
 
-// operand1 operator operand2 0 + 5
+// operand1 + operand2  
 function add() {
     const operand1 = currentResult; // currentResult :最初定義常數值為0, ...
     const operand2 = getUserInput(); // getUserInput() :輸入的數字
@@ -42,7 +42,7 @@ function add() {
     outputResult(currentResult, calcText); //呼叫函式
 }
 
-
+// operand1 - operand2  
 function sub() {
     const operand1 = currentResult;
     const operand2 = getUserInput();
@@ -52,8 +52,7 @@ function sub() {
     outputResult(currentResult, calcText);
 }
 
-
-
+// operand1 * operand2
 function mult() {
     const operand1 = currentResult;
     const operand2 = getUserInput();
@@ -63,6 +62,7 @@ function mult() {
     outputResult(currentResult, calcText);
 }
 
+// operand1 / operand2
 function divi() {
     const operand1 = currentResult;
     const operand2 = getUserInput();
@@ -71,9 +71,6 @@ function divi() {
     const calcText = `${operand1} / ${operand2}`;
     outputResult(currentResult, calcText);
 }
-
-
-
 
 addBtn.addEventListener('click', add); //當使用者點擊+時，執行add函式
 subtract.addEventListener('click', sub); //當使用者點擊-時，執行sub函式

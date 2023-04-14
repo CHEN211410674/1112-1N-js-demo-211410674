@@ -64,8 +64,6 @@ const displayTours_74 = () => {
           section.innerHTML = toursInfo;
         };
 
-const fetchTours_74 = async () => {};
-
 window.addEventListener('DOMContentLoaded', () => {
-  fetchTours_74();
+  displayTours_74();
 });

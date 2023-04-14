@@ -1,6 +1,6 @@
 const o ='o';
 const x ='x';
-let turn = 0;
+let turn = 0; 
 let done = false;
 
 const resetBtn = document.querySelector('#reset');
@@ -9,7 +9,7 @@ const allLi = document.querySelectorAll('#board li');
 
 const container = document.querySelector('#container');
 
-const checkwin = (player) => {
+const checkwin = (player) => {  //Arrow Function
 
  let p = [];
  allLi.forEach((item) =>{
