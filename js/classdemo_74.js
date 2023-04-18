@@ -12,6 +12,7 @@ const showClassDemo = (week) => {
           break;
         case 'w2-md':
           showDemo.innerHTML = `<iframe src='./demo/md/w02/w02_74.html' width="100%" height="100%"/>`;
+          break;
         case 'w3':
           showDemo.innerHTML = `<iframe src='./demo/w03/index.html' width="100%" height="100%"/>`;
           break;
@@ -34,7 +35,7 @@ const showClassDemo = (week) => {
           showDemo.innerHTML = `<iframe src='./demo/md/w05/w05_74.html' width="100%" height="100%"/>`;
           break;
         case 'w6':
-          showDemo.innerHTML = `<iframe src='./demo/w06/index.html' width="100%" height="100%"/>`;
+          showDemo.innerHTML = `<iframe src='./demo/w06-array/p3_74/p3_74.html' width="100%" height="100%"/>`;
           break;
         case 'w6-md':
           showDemo.innerHTML = `<iframe src='./demo/md/w06/w06_74.html' width="100%" height="100%"/>`;
