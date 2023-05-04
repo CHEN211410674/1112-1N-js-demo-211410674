@@ -4,14 +4,22 @@ const heading3 = document.querySelector('.three');
 const heading4 = document.querySelector('.four');
 
 const btn = document.querySelector('.btn');
-
-btn.addEventListener('click', ()=>{
-    addColor(1000, heading1, 'red')
-    .then(()=> addColor(2000, heading2, 'green'))
-    .then(()=> addColor(1000, heading3, 'blue'))
-    .then(()=> addColor(500, heading4, 'pink'))
-    .catch((error) => console.log(error))
+btn.addEventListener('click', async()=>{
+    const result = await displayColor();
+    console.log('result', result);
 });
+
+const displayColor = async () => {
+    try{
+      await addColor(1000, heading1, 'red');
+      await addColor(2000, heading2, 'green');
+      await addColor(1000, heading3, 'blue');
+      await addColor(2000, heading4, 'pink');
+      console.log('success');
+}catch(error){
+    console.log(error);
+}
+}
 
 const addColor = (time, element, color) =>{
     return new Promise ((resolve, reject)=>{
