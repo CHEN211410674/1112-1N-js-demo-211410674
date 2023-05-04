@@ -17,8 +17,7 @@ const getData = (url) =>{
             return `<p> ${item.name} </p>`
         }).join('');
         const divElement = document.createElement('div');
-        divElement.innerHTML = displayData;
-       document.body.appendChild(divElement);
+        divElement.body.appendChild(divElement);
     } else {
         console.log({
            status: xhr.status,
