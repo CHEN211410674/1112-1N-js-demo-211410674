@@ -1,8 +1,7 @@
-const supabaseUrl = 'https://sgtwgxsjtbibcbrzrfra.supabase.co'
-const supabase key = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNndHdneHNqdGJpYmNicnpyZnJhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzc3NTM3NjQsImV4cCI6MTk5MzMyOTc2NH0.v02KgJ-YkdX4E8XRTGB-kBeSEO9y8AWqoTOumbQMTHc'
-
+//import {menu} from './data.js'
 const sectionCenter = document.querySelector('.section-center');
 const btnContainer = document.querySelector('.btn-container');
+const supabase_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNndHdneHNqdGJpYmNicnpyZnJhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzc3NTM3NjQsImV4cCI6MTk5MzMyOTc2NH0.v02KgJ-YkdX4E8XRTGB-kBeSEO9y8AWqoTOumbQMTHc"
 
 const url = 'https://sgtwgxsjtbibcbrzrfra.supabase.co/rest/v1/menu_74?select=*';
 
@@ -12,7 +11,7 @@ const displayMenuItems = (menu) => {
     let displayMenu = menu.map((item) =>{
       return`
       <article class="menu-item">
-      <img src=${item.local_img} alt=${item.title} class="photo" />
+      <img src=${item.remote_img} alt=${item.title} class="photo" />
       <div class="item-info">
         <header>
           <h4>${item.title}</h4>
@@ -34,7 +33,7 @@ const displayMenuItems = (menu) => {
 // const categories = ['all', 'breakfast', 'lunch', 'dinner', 'shakes'];
 
 
-const displayBtn = () => {
+const displayBtn = (menu) => {
     const categories = ['all',...new Set(menu.map(item=>item.category))]
     let Btn= categories.map((item) =>{
       return`
@@ -66,27 +65,27 @@ const displayBtn = () => {
   }
 
   const fetchData = async () => {
-    try {
-        const response = await fetch(url,{
-        method:'GET',
-        headers:{
-          apiKey:`${supabase_key}`,
-          Authorization:`Bearer ${supabase_key}`
-        }
-        });
-        const data = response.json();
-        console.log(`fetch data`, data);
-        return data;
-    }catch(error){
-      console.log(error);
+   try{
+    const response = await fetch(url, {
+    method: 'GET',
+    headers: {
+    apikey: `${supabase_key}`,
+    Authorization: `Bearer ${supabase_key}`
     }
-  }
+    });
+    const data = response.json();
+    console.log('fetch data', data);
+    return data;
+   }catch(error){
+   console.log(error);
+   }
+}
 
   
 
   window.addEventListener('DOMContentLoaded', async () => {
     menu1 = await fetchData();
     await displayMenuItems(menu1);
-    await displayBtn();
+    await displayBtn(menu1);
 });
 
