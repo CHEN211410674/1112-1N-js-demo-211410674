@@ -27,6 +27,3 @@ const displayData = async (data) => {
     divElement.innerHTML = displayContent;
     document.body.appendChild(divElement);
 }
-
-
-
