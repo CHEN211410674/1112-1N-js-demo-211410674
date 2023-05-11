@@ -4,7 +4,8 @@
     "title": "buttermilk pancakes",
     "category": "breakfast",
     "price": 15.59,
-    "local_img": "https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-1.jpeg",
+    "local_img": "./menu/images/item-1.jpeg",
+    "remote_img":"https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-1.jpeg",
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam."
   },
   {
@@ -12,7 +13,8 @@
     "title": "diner double",
     "category": "dessert",
     "price": 13.99,
-    "local_img": "https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-2.jpeg",
+    "local_img": "./menu/images/item-2.jpeg",
+    "remote_img": "https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-2.jpeg",
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam. Enim voluptas, expedita "
   },
   {
@@ -20,7 +22,8 @@
     "title": "godzilla milkshake",
     "category": "shakes",
     "price": 6.99,
-    "local_img": "https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-3.jpeg",
+    "local_img":"./menu/images/item-3.jpeg",
+    "remote_img": "https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-3.jpeg",
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam. Enim voluptas, expedita"
   },
   {
@@ -28,7 +31,8 @@
     "title": "Country Delight",
     "category": "lunch",
     "price": 20.99,
-    "local_img": "https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-4.jpeg",
+    "local_img":"./menu/images/item-4.jpeg",
+    "remote_img": "https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-4.jpeg",
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam. Enim voluptas, expedita"
   },
   {
@@ -36,7 +40,8 @@
     "title": "Egg Attack",
     "category": "breakfast",
     "price": 2.99,
-    "local_img": "https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-5.jpeg",
+    "local_img":"./menu/images/item-5.jpeg",
+    "remote_img": "https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-5.jpeg",
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam. Enim voluptas, expedita"
   },
   {
@@ -44,7 +49,8 @@
     "title": "Oreo Dream",
     "category": "shakes",
     "price": 18.99,
-    "local_img": "https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-6.jpeg",
+    "local_img":"./menu/images/item-6.jpeg",
+    "remote_img": "https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-6.jpeg",
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam. Enim voluptas, expedita"
   },
   {
@@ -52,7 +58,8 @@
     "title": "Bacon Overflow",
     "category": "breakfast",
     "price": 8.99,
-    "local_img": "https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-7.jpeg",
+    "local_img":"./menu/images/item-7.jpeg",
+    "remote_img": "https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-7.jpeg",
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam. Enim voluptas, expedita"
   },
   {
@@ -60,7 +67,8 @@
     "title": "American Classic",
     "category": "lunch",
     "price": 12.99,
-    "local_img": "https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-8.jpeg",
+    "local_img":"./menu/images/item-8.jpeg",
+    "remote_img": "https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-8.jpeg",
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam. Enim voluptas, expedita"
   },
   {
@@ -68,7 +76,8 @@
     "title": "Quarantine Buddy",
     "category": "lunch",
     "price": 13.99,
-    "local_img": "https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-9.jpeg",
+    "local_img":"./menu/images/item-9.jpeg",
+    "remote_img": "https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Menu_74/item-9.jpeg",
     "descrip": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam dolores ut iusto quas quia dignissimos ullam. Enim voluptas, expedita"
   }
 ]
