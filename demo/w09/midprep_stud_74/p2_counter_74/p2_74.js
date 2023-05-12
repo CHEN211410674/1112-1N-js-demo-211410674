@@ -26,6 +26,6 @@ btns.forEach(function (btn) {
       value.style.color = '#222'
     }
 
-    value.textContent = count;
+    value.textContent = count; //取得value內的文字
   });
 });

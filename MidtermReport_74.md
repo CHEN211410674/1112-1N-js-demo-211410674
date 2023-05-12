@@ -68,6 +68,13 @@ W09
 
 ![w09-5.png](https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/md_1N_img/w09-5.png)
 
+```
+7019817 CHEN211410674   Tue Apr 18 22:50:53 2023 +0800  每一個選項有兩個超連結，舉例來說 TicTacToe 點選後，會顯示井字遊戲。如果點選 w2-md 會顯示 第2週的 w02_xx.html 檔
+
+7a649e7 CHEN211410674   Mon Apr 17 22:59:14 2023 +0800  實作 Week 1~6, Midprep Exam&&右上 icons
+
+```
+
 
 
 
