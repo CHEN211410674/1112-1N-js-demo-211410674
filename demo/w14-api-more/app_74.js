@@ -1,12 +1,12 @@
 const btn = document.querySelector('.btn');
 
 btn.addEventListener('click', async () => {
-  const url = 'https://www.thesportsdb.com/api/v1/json/3/all_leagues.php';
+  const url = 'https://theaudiodb.com/api/v1/json/2/album.php?i=112024';
 try {
 	const response = await fetch(url);
 	const data = await response.json();
-	console.log('data', data.leagues);
-  displayItems(data.leagues);
+	console.log('data', data.album);
+  displayItems(data.album);
 } catch (error) {
 	console.error(error);
 }
@@ -15,8 +15,8 @@ try {
 const displayItems = (items) => {
   const displayData = items
     .map((item) => {
-      const { strLeague } = item;
-      return `<p>${strLeague}</p>`;
+      const { strAlbum } = item;
+      return `<p>${strAlbum}</p>`;
     })
     .join('');
   const element = document.createElement('div');
