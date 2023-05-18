@@ -1,12 +1,12 @@
 const btn = document.querySelector('.btn');
 
 btn.addEventListener('click', async () => {
-  const url = 'https://theaudiodb.com/api/v1/json/2/album.php?i=112024';
+  const url = 'https://www.themealdb.com/api/json/v1/1/search.php?f=a';
 try {
 	const response = await fetch(url);
 	const data = await response.json();
-	console.log('data', data.album);
-  displayItems(data.album);
+	console.log('data', data.meals);
+  displayItems(data.meals);
 } catch (error) {
 	console.error(error);
 }
@@ -15,8 +15,8 @@ try {
 const displayItems = (items) => {
   const displayData = items
     .map((item) => {
-      const { strAlbum } = item;
-      return `<p>${strAlbum}</p>`;
+      const { strArea } = item;
+      return `<p>${strArea}</p>`;
     })
     .join('');
   const element = document.createElement('div');
