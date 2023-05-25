@@ -2,8 +2,10 @@
 
 const url = './api/products.json'
 
+const pContainer = document.querySelector('.products-container');
+
 let allProducts;
-let products = document.querySelector('.products-');
+let products ;
 
 const fetchData = async() => {
   try{
@@ -37,11 +39,8 @@ const displayProducts = (products) => {
 
   pContainer.innerHTML = displayContent;
 }
-
-
-
 window.addEventListener('DOMContentLoaded', async () => {
   allProducts = await fetchData();
   console.log('all products', allProducts);
-  await displayContent(allProducts);
+  await displayProducts(allProducts);
 });
