@@ -44,9 +44,9 @@ companyBtns.forEach((btn) => {
   btn.addEventListener('click', (e) =>{
       const companyId = e.currentTarget.dataset.id;
       console.log('companyId', companyId);
-      if(company === 'all'){
-        console.log('companyId', allProducts);
-        displayProducts(allowProducts);
+      if(companyId === 'all'){
+        console.log('all companyId', allProducts);
+        displayProducts(allProducts);
       } else {
         products = allProducts.filter((p)=>p.fields.company === companyId);
         console.log(`${companyId} products`, products);
