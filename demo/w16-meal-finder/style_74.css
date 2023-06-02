@@ -5,7 +5,7 @@
 body{
     background-color: #2d2013;
     color: #fff;
-    font-family: Verdana, Geneva, Tahoma, san;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
 }
 
@@ -13,7 +13,8 @@ body{
     margin: 0 auto;
     max-width: 800px;
     display: flex;
-    flex-direction: center;
+    flex-direction: column;
+    justify-content:center;
     align-items:center;
     text-align: center;
 }
@@ -58,6 +59,8 @@ input [type='text'] {
     height: 180px;
     width:180px;
     cursor: pointer;
+    position: relative;
+    text-align: center;
 }    
 
 .meal img {
@@ -72,18 +75,61 @@ input [type='text'] {
     top: 0;
     left:0;
     width:100%;
+    height: 100%;
     background: rgba(0,0,0, 0.6);
     display: flex;
     justify-content: center;
     align-items:center;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+
 }
 
 .meal:hover .meal-info{
     opacity: 1;
 }
 
+.single-meal {
+    margin: 30px auto;
+    width: 70%;
+}
+
+.single-meal img{
+    width: 300px;
+    border: 4px #fff solid;
+    border-radius: 2px;
+}
+
+.single-meal ul {
+    list-style-type: none;
+    padding-left:0;
+}
+
+.single-meal ul li {
+    background-color: #fff;
+    color: #2d2013;
+    display:inline-block;
+    margin:0 5px 0;
+    padding: 1px solid #ededed;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
 @media (max-width: 800px){
     .meals {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 650px){
+    .meals {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px){
+    .meals {
+        grid-template-columns: 1fr;
     }
 }
