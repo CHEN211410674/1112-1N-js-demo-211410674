@@ -94,3 +94,17 @@ mealsE1.addEventListener('click', e => {
     }
 
 });
+
+//RandomBtn
+const randomBtn = () =>{
+    fetch(`https://www.themealdb.com/api/json/v1/1/random.php
+    `)
+      .then(resp=>resp.json())
+      .then(data => {
+        console.log('meal data', data);
+        const meal = data.meals[0];
+        addMealToDOM(meal);
+    })
+}
+
+random.addEventListener('click', randomBtn);
