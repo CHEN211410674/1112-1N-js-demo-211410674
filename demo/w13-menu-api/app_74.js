@@ -1,7 +1,7 @@
 //import {menu} from './data.js'
 const sectionCenter = document.querySelector('.section-center');
 const btnContainer = document.querySelector('.btn-container');
-const supabase_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNndHdneHNqdGJpYmNicnpyZnJhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2Nzc3NTM3NjQsImV4cCI6MTk5MzMyOTc2NH0.v02KgJ-YkdX4E8XRTGB-kBeSEO9y8AWqoTOumbQMTHc"
+const supabase_key = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNndHdneHNqdGJpYmNicnpyZnJhIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODYyMjQ1NjIsImV4cCI6MjAwMTgwMDU2Mn0.josX2sro0EuKc_blcOVWDcThfC6GLsD4pieAWHFS_Gc"
 
 const url = 'https://sgtwgxsjtbibcbrzrfra.supabase.co/rest/v1/menu_74?select=*';
 
