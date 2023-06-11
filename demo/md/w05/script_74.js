@@ -8,7 +8,7 @@ const single_mealE1 = document.querySelector('#single-meal');
 const searchMeal = (e) => {
    e.preventDefault();
    const term = search.value;
-   // console.log('term', term);
+   // console.lod('term', term);
    if(term.trim()){
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${term}`)
       .then(response => response.json())
