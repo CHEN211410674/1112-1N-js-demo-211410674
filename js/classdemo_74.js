@@ -56,13 +56,13 @@ const showClassDemo = (week) => {
           showDemo.innerHTML = `<iframe src='./demo/w15-store-product/index.html' width="100%" height="100%"/>`;
           break; 
         case 'api_74-md':
-            showDemo.innerHTML = `<iframe src='./demo/md/api/api_74.md' width="100%" height="100%"/>`;
+            showDemo.innerHTML = `<iframe src='./demo/md/api/api_74.html' width="100%" height="100%"/>`;
         break; 
         case 'API':
           showDemo.innerHTML = `<iframe src='./api_project/api_74.html' width="100%" height="100%"/>`;
         break;  
         case 'Learning':
-          showDemo.innerHTML = `<iframe src='./demo/md/api/Learning.md' width="100%" height="100%"/>`;
+          showDemo.innerHTML = `<iframe src='./demo/md/api/Learning.html' width="100%" height="100%"/>`;
         break;
 
     }
