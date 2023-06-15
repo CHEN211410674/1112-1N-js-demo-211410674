@@ -10,7 +10,7 @@ const searchMeal = (e) => {
   const term = search.value;
   //   console.log('term', term);
   if (term.trim()) {
-    fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${term}`)
+    fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${term}`)
       .then((response) => response.json())
       .then((data) => {
         console.log('meals data', data);
@@ -39,7 +39,7 @@ const searchMeal = (e) => {
 };
 
 const getMealById = (mealID) => {
-  fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${mealID}`)
+  fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealID}`)
     .then((resp) => resp.json())
     .then((data) => {
       console.log('single meal', data);

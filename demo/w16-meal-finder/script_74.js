@@ -6,10 +6,10 @@ const mealsE1 = document.querySelector('#meals');
 const single_mealE1 = document.querySelector('#single-meal');
 
 const searchMeal = (e) => {
-   e.preventDefault();
+   e.preventDefault(); //如果事件可以被取消，就取消事件（即取消事件的預設行為）。但不會影響事件的傳遞，事件仍會繼續傳遞。
    const term = search.value;
    // console.log('term', term);
-   if(term.trim()){
+   if(term.trim()){ //trim() 方法用於删除字符串的頭尾空白符
     fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${term}`)
       .then(response => response.json())
       .then(data =>{

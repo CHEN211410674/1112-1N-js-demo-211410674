@@ -5,7 +5,7 @@ let products;
 const fetchData = async ()=>{
     try {
         const response = await fetch(url);
-        const data = await response.json();;
+        const data = await response.json();
         console.log('data', data);
         return data;
     //   displayItems(data.meals);
