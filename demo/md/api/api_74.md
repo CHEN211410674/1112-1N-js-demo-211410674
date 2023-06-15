@@ -23,6 +23,25 @@
 29841dd CHEN211410674   Wed Jun 14 21:09:35 2023 +0800  呈現出API裡的圖片S
 
 ```
+### 來不及完成的 :
+
+```
+1. 左側按鈕連結
+
+```
+
+### 仍未解決的問題:
+
+![](https://sgtwgxsjtbibcbrzrfra.supabase.co/storage/v1/object/public/demo-74/Api_project_74/pb_74.png)
+
+### 自主學習方式:
+```
+1.參考上課教材、影片抓取API
+2.詢問教授、同學
+```
+
+
+
 
 ### ALL log && Commits
 
